@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>WORD MAKER</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Homemade+Apple|Merienda" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Caveat|Courgette|Dancing+Script|Kalam|Lobster+Two|Poor+Story|Righteous|Satisfy" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<audio id="audioBG"  preloader="metadata" loop>
+    <source src="audio/Sound_bg.mp3" type="audio/mpeg">
+    <source src="audio/Sound_bg.ogg" type="audio/ogg; codecs=vorbis">
+</audio>
+<audio id="audioBtnUp"  preloader="metadata">
+    <source src="audio/Sound08669.mp3" type="audio/mpeg">
+    <source src="audio/Sound08669.ogg" type="audio/ogg; codecs=vorbis">
+</audio>
+<audio id="audioBtnDown"  preloader="metadata">
+    <source src="audio/Sound_07869.mp3" type="audio/mpeg">
+    <source src="audio/Sound_07869.ogg" type="audio/ogg; codecs=vorbis">
+</audio>
+<audio id="audioWord"  preloader="metadata">
+    <source src="audio/Sound_11517.mp3" type="audio/mpeg">
+    <source src="audio/Sound_11517.ogg" type="audio/ogg; codecs=vorbis">
+</audio>
+<audio id="audioFailure"  preloader="metadata">
+    <source src="audio/Sound_failure.mp3" type="audio/mpeg">
+    <source src="audio/Sound_failure.ogg" type="audio/ogg; codecs=vorbis">
+</audio>
+<div id="main-holder">
+    <div id="name-holder" class="">
+        <div id="name">
+            <img src="img/19.png">
+            <img class="animateImg animation" src="img/13.png">
+            <img src="img/16.png">
+            <img class="animateImg animation" src="img/3.png">
+            <img src="img/16.png">
+            <img class="animateImg animation" src="img/5.png">
+            <img src="img/6.png">
+            <img class="animateImg animation" src="img/13.png">
+        </div>
+        <div id="start">играть</div>
+    </div>
+    <div id="game-holder" style="text-align:center;"></div>
+    <canvas id="canvas"></canvas>
+    <div id="progress">
+        <span id="count"></span>
+        <img id="sound">
+        <img id="quit">
+    </div>
+</div>
+<div id="popup" class="popup active">
+    <div class="popup__content-wrapper">
+        <div id="popupContent" class="popup__content"></div>
+        <div id="close" class="popup__content-close"><img src="img/cross.png"></div>
+    </div>
+</div>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
